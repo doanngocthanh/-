@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+.vscode/
+*.log
+resp.txt
+ocr_error.png
+raw-page-*.json
+raw-page-*.txt

@@ -1,0 +1,5 @@
+//install
+npm install --silent && npx playwright install --with-deps
+
+//build
+cd /workspaces/- && docker build -t ocr-api:latest .
