@@ -8,6 +8,12 @@ COPY package.json package-lock.json* ./
 # Install all deps (including playwright) — image already contains browsers
 RUN npm install --legacy-peer-deps
 
+# Copy prisma schema before generating client
+COPY prisma ./prisma
+
+# Generate Prisma client
+RUN npm run db:generate
+
 # Copy app sources
 COPY . .
 
